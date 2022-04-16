@@ -31,7 +31,7 @@ if __name__ == "__main__":
         .groupby(['review score','product category']) \
         .agg({'order':'count'}) \
         .unstack() \
-        .to_excel('report_review score.xlsx')                     # export data ke dalam bentuk excel
+        .to_excel('report_review_score.xlsx')                     # export data ke dalam bentuk excel
 
     print(df.info())
     print(df)
